@@ -75,11 +75,69 @@ function calcularPerimetroCuadrado() {
     const input = document.getElementById("Input-Cuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    alert("El perímetro del cuadrado es: "+ perimetro);
+    const resp = "El perímetro del cuadrado es: " + perimetro + " cm.";
+    document.getElementById("Respuesta-cuadrado").value = resp;
 }
-function calcularAreaCuadrado(params) {
+function calcularAreaCuadrado() {
     const input = document.getElementById("Input-Cuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert("El área del cuadrado es: "+ area);
+    const resp = "El área del cuadrado es: " + area + " cm^2.";
+    document.getElementById("Respuesta-cuadrado").value = resp;
+}
+function calcularPerimetroTriangulo() {
+    const lado1 = document.getElementById("Input-Triangulo-lado1");
+    const lado2 = document.getElementById("Input-Triangulo-lado2");
+    const base = document.getElementById("Input-Triangulo-base");
+    const value_lado1 = lado1.value;
+    const value_lado2 = lado2.value;
+    const value_base = base.value;
+    const perimetro = perimetroTriangulo(Number(value_lado1),Number(value_lado2),Number(value_base));
+    const resp = "El perímetro del Triangulo es: " + perimetro + " cm.";
+    document.getElementById("Respuesta-triangulo").value = resp;
+}
+const calculAltura = function (a, b, c) {
+    let A;
+    if(a > b && b === c && a >= 2*b || b > a && a === c && b >= 2*a || c > a && a === b && c >= 2*a) {
+        alert('Valores fuera de lo real');
+    } else if(a > b && a === c || a < b && a === c) {
+        A = Math.sqrt(Math.pow(a,2) - Math.pow(b/2, 2));
+        return A;
+    } else if(a > c && a === b || a < c && a === b) {
+        A = Math.sqrt(Math.pow(a,2) - Math.pow(c/2, 2));
+        return A;
+    } else if(b > a && b === c || b < a && b === c) {
+        A = Math.sqrt(Math.pow(b,2) - Math.pow(a/2, 2));
+        return A;
+    } else {
+        alert('El triangulo no es Isósceles');
+    }
+}   
+
+function calcularAreaTriangulo() {
+    const lado1 = document.getElementById("Input-Triangulo-lado1");
+    const lado2 = document.getElementById("Input-Triangulo-lado2");
+    const base = document.getElementById("Input-Triangulo-base");
+    const value_lado1 = Number(lado1.value);
+    const value_lado2 = Number(lado2.value);
+    const value_base = Number(base.value);
+    const alturaTriangulo = calculAltura(value_lado1, value_lado2, value_base);
+    const area = areaTriangulo(alturaTriangulo, value_base);
+    const resp = "El área del Triangulo es: " + area + " cm^2.";
+    document.getElementById("Respuesta-triangulo").value = resp;
+}
+
+function calcularPerimetroCirculo() {
+    const input = document.getElementById("Input-radio");
+    const value = input.value;
+    const perimetro = perimetroCirculo(value);
+    const resp = "El perímetro del circulo es: " + perimetro + " cm.";
+    document.getElementById("Respuesta-circulo").value = resp;
+}
+function calcularAreaCirculo() {
+    const input = document.getElementById("Input-radio");
+    const value = input.value;
+    const area = areaCirculo(value);
+    const resp = "El área del circulo es: " + area + " cm^2.";
+    document.getElementById("Respuesta-circulo").value = resp;
 }

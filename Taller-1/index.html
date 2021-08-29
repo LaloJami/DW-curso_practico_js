@@ -5,30 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Figuras Geométricas | Taller 1</title>
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>Figuras geométricas</h1>
-        <p>Taller 1 del curso de JavaScript</p>
+        <section class="header--title-container">
+            <h1>Figuras geométricas</h1>
+            <p>Taller 1 del curso de JavaScript</p>
+        </section>
     </header>
     <main>
-        <section>
+        <section class="main-card-container">
             <h2>Calcula el área y perímetro de un cuadrado</h2>
             <form action="">
                 <label for="Input-Cuadrado">
                     Escribe cuánto mide cada lado de tu cuadrado:
                 </label>
                 <input id="Input-Cuadrado" type="number">
-                <button type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el perímetro
-                </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcula el área
-                </button>
+                <div>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcula el área
+                    </button>
+                </div>
+                <input disabled type="text" id="Respuesta-cuadrado" class="answer">
+            </form>
+        </section>
+        <section class="main-card-container">
+            <h2>Calcula el área y perímetro de un triángulo.</h2>
+            <form action="">
+                <label for="Input-Triangulo-lado1">
+                    Escribe cuánto mide el lado 1 de tu triángulo:
+                </label>
+                <input id="Input-Triangulo-lado1" type="number">
+                <label for="Input-Triangulo-lado2">
+                    Escribe cuánto mide el lado 2 de tu triángulo:
+                </label>
+                <input id="Input-Triangulo-lado2" type="number">
+                <label for="Input-Triangulo-base">
+                    Escribe cuánto mide la base de tu triángulo:
+                </label>
+                <input id="Input-Triangulo-base" type="number">
+                <div>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcula el área
+                    </button>
+                </div>
+                <input disabled type="text" id="Respuesta-triangulo" class="answer">
+            </form>
+        </section>
+        <section class="main-card-container">
+            <h2>Calcula el área y perímetro de un circulo.</h2>
+            <form action="">
+                <label for="Input-radio">
+                    Escribe cuánto mide el radio de tu circulo:
+                </label>
+                <input id="Input-radio" type="number">
+                <div>
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcula el área
+                    </button>
+                    <input disabled type="text" id="Respuesta-circulo" class="answer">
+                </div>
             </form>
         </section>
     </main>
+    <footer>
+        <h2>Hecho por honguito</h2>
+    </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>

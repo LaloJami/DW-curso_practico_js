@@ -1,0 +1,7 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+}
