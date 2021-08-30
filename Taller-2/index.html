@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 2</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,19 +16,24 @@
         <p>Taller #2 del curso práctico de JS.</p>
     </header>
     <main>
-        <section>
+        <section class="card-container">
             <h2>Calcula el precio a pagar de tus productos con descuentos.</h2>
             <form action="">
                 <label for="inputPrice">Escribe el precio de tu producto.</label>
                 <input type="number" id="inputPrice">
                 <label for="inputDiscount">Escribe el descuento de tu producto</label>
                 <input type="number" id="inputDiscount">
-                <button type="button">
+                <button type="button" onclick="computePriceDiscount()">
                     Calcular el precio con descuento.
                 </button>
+
+                <p id="ResultPrice"></p>
             </form>
         </section>
     </main>
+    <footer>
+        <h2>Hecho por honguito</h2>
+    </footer>
     <script src="./porcentajes.js"></script>
 </body>
 </html>
