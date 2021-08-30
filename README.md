@@ -26,3 +26,12 @@ Esta en dos dimensiones, representa la extensión de una region en dos dimension
 2. Implementar las fórmulas en JavaScript.
 3. Crear funciones.
 4. Integrar JavaScript en HTML.
+
+## Análisis: cómo calcular porcentajes y descuentos.
+Formula para calcular el porcentaje
+[P * (100 - D)]/100 siendo P el precio del producto, y D el descuento.
+### Segundo Taller: Porcentajes y descuentos.
+1. definir las fórmulas.
+2. implementar las fórmulas en JavaScript.
+3. Crear funciones.
+4. Integrar JS con HTML.
