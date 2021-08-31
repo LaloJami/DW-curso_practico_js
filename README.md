@@ -51,3 +51,9 @@ Este proceso es mucho mas optimo que la media ya que los datos atípicos no afec
 
 **Moda**: Este es el dato que mas se repite en un conjunto de datos si tenemos el siguiente arreglo [10,9,8,10,8,10,8,7,9] y vemos que dos números se repiten la misma cantidad de veces, simplemente se ponen los dos [8,10].
 Este tipo de proceso es muy funcional cuando no solo queremos hablar de tipos de datos numéricos, tambien pueden ser cadenas de texto y demás.
+
+## Tercer Taller: Promedio, moda y mediana.
+1. definir las formulas.
+2. implementar las fórmulas en JS.
+3. crear funciones.
+4. integrar JS con HTML.
