@@ -77,6 +77,13 @@ main .card-container{
     outline: none;
     text-align: center;
 }
+.card-container form select{
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+}
 .card-container form button{
     margin: 20px auto;
     border-radius: 8px;
