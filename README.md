@@ -60,3 +60,16 @@ Este tipo de proceso es muy funcional cuando no solo queremos hablar de tipos de
 
 para tener en cuenta 
 ![](https://static.platzi.com/media/user_upload/FR%20ARRAY-SHEET-55236528-302e-4e62-8c1d-40741ffc6a79.jpg)
+
+## Análisis: cómo analizar salarios
+
+Estructura
+- lista de paises
+- persona individual (objetos[nombres, salarios])
+
+Análisis:
+* total
+* promedio
+* mediana
+* general
+* Top 10%
