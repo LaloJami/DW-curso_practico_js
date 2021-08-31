@@ -16,9 +16,27 @@
         <p>Este es el tercer taller del curso practico de JS</p>
     </header>
     <main>
-        <section>
-            
+        <section class="card-container">
+            <h2>Calcula el promedio, moda, o mediana.</h2>
+            <form action="">
+                <label for="InputLista">Ingresa la lista de números</label>
+                <input type="text" id="InputLista">
+                <button type="button" onclick="calcularPromedio()">
+                    calcular promedio
+                </button>
+                <button type="button" onclick="calcularModa()">
+                    calcular moda
+                </button>
+                <button type="button" onclick="calcularMediana()">
+                    calcular mediana
+                </button>
+                <p id="Respuesta"></p>
+            </form>
         </section>
     </main>
+    <footer>
+        <h2>Hecho por honguito</h2>
+    </footer>
+    <script src="./promedio.js"></script>
 </body>
 </html>

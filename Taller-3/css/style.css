@@ -16,6 +16,7 @@ header{
     height: 200px;
     background-color: rgb(14, 127, 219);
     min-width: 320px;
+    text-align: center;
 }
 header h1{
     margin: 15px auto;
@@ -28,4 +29,84 @@ header p{
     font-weight: 500;
     line-height: 1.8rem;
     color: #3a3939;
+    width: 90%;
+}
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: burlywood;
+    display: flex;
+}
+.card-container{
+    width: 80%;
+    min-width: 266px;
+    min-height: 250px;
+    margin: 25px auto;
+    border: 2px solid black;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.card-container h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin: 25px auto;
+    width: 90%;
+}
+.card-container form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.card-container form label{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 10px auto;
+}
+.card-container form input{
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-radius: 9px;
+    outline: none;
+    text-align: center;
+    height: 25px;
+}
+.card-container form button{
+    height: 32px;
+    border-radius: 9px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background-color: cornflowerblue;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.card-container #Respuesta{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #3a3939;
+    margin-bottom: 15px;
+}
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    text-align: center;
+}
+footer h2{
+    font-size: 1.8rem;
+    margin: auto;
+    font-weight: 400;
+    color: whitesmoke;
 }

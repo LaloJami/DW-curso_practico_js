@@ -57,3 +57,6 @@ Este tipo de proceso es muy funcional cuando no solo queremos hablar de tipos de
 2. implementar las fórmulas en JS.
 3. crear funciones.
 4. integrar JS con HTML.
+
+para tener en cuenta 
+![](https://static.platzi.com/media/user_upload/FR%20ARRAY-SHEET-55236528-302e-4e62-8c1d-40741ffc6a79.jpg)
