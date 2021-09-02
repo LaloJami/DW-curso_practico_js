@@ -41,6 +41,7 @@ main{
 .card-container{
     width: 80%;
     min-width: 266px;
+    max-width: 500px;
     min-height: 250px;
     margin: 25px auto;
     border: 2px solid black;
@@ -87,6 +88,13 @@ main{
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.8rem;
+}
+.card-container #AnswerH{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #3a3939;
+    margin-bottom: 15px;
 }
 footer{
     width: 100%;
