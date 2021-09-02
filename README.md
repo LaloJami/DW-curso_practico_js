@@ -1,6 +1,7 @@
 # Curso práctico de JavaScript
 
 Estas son mis notas sobre el curso práctico de JavaScript.
+Aqui el link de mi página subida a GitHub pages-> https://lalojami.github.io/curso-practico-js/
 
 ## Análisis: ¿Cómo calcular figuras geométricas?
 Las principales figuras geometricas que conocemos son: Cuadrado, rectangulo, triángulo, y círculo
