@@ -10,7 +10,7 @@ html{
 header{
     width: 100%;
     min-width: 320px;
-    height: 150px;
+    height: 200px;
     /* position: relative; */
     display: flex;
     flex-direction: column;
@@ -38,6 +38,20 @@ header{
     line-height: 1.8rem;
     margin-top: 25px;
     color: wheat;
+}
+header button{
+    margin: 25px auto;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    height: 35px;
+}
+header button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
 }
 main{
     width: 100%;

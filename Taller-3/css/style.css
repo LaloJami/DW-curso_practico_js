@@ -31,6 +31,20 @@ header p{
     color: #3a3939;
     width: 90%;
 }
+header button{
+    margin: 25px auto;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    height: 35px;
+}
+header button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
 main{
     width: 100%;
     min-width: 320px;
